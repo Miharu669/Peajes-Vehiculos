@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class VehicleApp {
-    private List<Vehicle> vehicles = new ArrayList<>();
+    public List<Vehicle> vehicles = new ArrayList<>();
 
     public static void main(String[] args) {
         VehicleApp app = new VehicleApp();
@@ -52,7 +52,7 @@ public class VehicleApp {
         }
     }
 
-    private void addCar(Scanner scanner) {
+    public void addCar(Scanner scanner) {
         System.out.print("Enter the license plate: ");
         String licensePlate = scanner.nextLine();
         Car car = new Car(licensePlate);
@@ -60,7 +60,7 @@ public class VehicleApp {
         System.out.println("Car added successfully.");
     }
 
-    private void addMotorcycle(Scanner scanner) {
+    public void addMotorcycle(Scanner scanner) {
         System.out.print("Enter the license plate: ");
         String licensePlate = scanner.nextLine();
         Motorcycle motorcycle = new Motorcycle(licensePlate);
@@ -68,7 +68,7 @@ public class VehicleApp {
         System.out.println("Motorcycle added successfully.");
     }
 
-    private void addTruck(Scanner scanner) {
+    public void addTruck(Scanner scanner) {
         System.out.print("Enter the license plate: ");
         String licensePlate = scanner.nextLine();
         System.out.print("Enter the number of axies: ");
@@ -79,7 +79,7 @@ public class VehicleApp {
         System.out.println("Truck added successfully with " + numAxles + " axies.");
     }
 
-    private void viewVehicles() {
+    public void viewVehicles() {
         if (vehicles.isEmpty()) {
             System.out.println("No vehicles in the list.");
             return;
@@ -95,7 +95,7 @@ public class VehicleApp {
         }
     }
 
-    private void calculateTotalBill() {
+    public void calculateTotalBill() {
         if (vehicles.isEmpty()) {
             System.out.println("No vehicles to calculate the bill.");
             return;
