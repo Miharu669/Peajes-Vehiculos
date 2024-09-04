@@ -38,6 +38,13 @@ public class CarTest {
     }
 
     @Test
+    public void testCalculateBill_EmptyLicensePlate_ReturnsDefaultBill() {
+        Car car = new Car("");
+        double bill = car.calculateBill();
+        assertEquals(100.0, bill, 0.0);
+    }
+
+    @Test
     public void testGetLicensePlate() {
         String licensePlate = "6996FHX";
         Car car = new Car(licensePlate);
