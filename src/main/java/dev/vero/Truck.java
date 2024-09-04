@@ -21,6 +21,6 @@ public class Truck extends Vehicle {
 
     @Override
     public double calculateBill() {
-        return TRUCK_RATE;
+        return TRUCK_RATE * numAxis;
     }
 }

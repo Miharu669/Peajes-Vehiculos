@@ -31,28 +31,28 @@ public class TruckTest {
     public void testCalculateBill() {
         Truck truck = new Truck("1234XYZ", 4);
         double bill = truck.calculateBill();
-        assertEquals(50.0, bill, 0.0);
+        assertEquals(200.0, bill, 0.0);
     }
 
     @Test
     public void testCalculateBill_ValidLicensePlate_ReturnsCorrectBill() {
         Truck truck = new Truck("1234XYZ", 4);
         double bill = truck.calculateBill();
-        assertEquals(50.0, bill, 0.0);
+        assertEquals(200.0, bill, 0.0);
     }
 
     @Test
     public void testCalculateBill_InvalidLicensePlate_ReturnsDefaultBill() {
         Truck truck = new Truck("invalidLicensePlate", 4);
         double bill = truck.calculateBill();
-        assertEquals(50.0, bill, 0.0);
+        assertEquals(200.0, bill, 0.0);
     }
 
     @Test
     public void testCalculateBill_NullLicensePlate_ReturnsDefaultBill() {
         Truck truck = new Truck(null, 4);
         double bill = truck.calculateBill();
-        assertEquals(50.0, bill, 0.0);
+        assertEquals(200.0, bill, 0.0);
     }
 
     @Test
