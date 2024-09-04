@@ -41,4 +41,14 @@ public class TollStation {
         this.vehicles = vehicles;
     }
 
+    public void printReport() {
+        System.out.println("Toll Station: " + name);
+        System.out.println("City: " + city);
+        System.out.println("Total Toll Collected: $" + totalTollCollected);
+        System.out.println("Vehicles:");
+        for (Vehicle vehicle : vehicles) {
+            System.out.println(" - License Plate: " + vehicle.getLicensePlate() + ", Bill: $" + vehicle.calculateBill());
+        }
+    }
+
 }
