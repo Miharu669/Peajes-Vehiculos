@@ -37,7 +37,7 @@ public class TollStation {
         totalTollCollected += vehicle.calculateBill();
     }
 
-    public void settVehicles(List<Vehicle> vehicles) {
+    public void setVehicles(List<Vehicle> vehicles) {
         this.vehicles = vehicles;
     }
 
